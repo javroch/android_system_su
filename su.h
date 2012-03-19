@@ -33,6 +33,10 @@
 
 #define DATABASE_VERSION 6
 
+#define ROOT_ACCESS_PROPERTY "persist.sys.root_access"
+#define ROOT_ACCESS_DEFAULT "0"
+#define ROOT_SETTINGS_PROPERTY "ro.root.settings"
+
 struct su_initiator {
     pid_t pid;
     unsigned uid;

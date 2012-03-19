@@ -349,9 +349,9 @@ int main(int argc, char *argv[])
     }
 
     property_get("ro.debuggable", debuggable, "0");
-    property_get("persist.sys.root_access", enabled, "1");
+    property_get(ROOT_ACCESS_PROPERTY, enabled, ROOT_ACCESS_DEFAULT);
     property_get("ro.build.type", build_type, "");
-    property_get("ro.root.settings", root_settings, "");
+    property_get(ROOT_SETTINGS_PROPERTY, root_settings, "");
 
     orig_umask = umask(027);
 
