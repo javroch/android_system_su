@@ -33,9 +33,9 @@
 
 #define DATABASE_VERSION 6
 
-#define ROOT_ACCESS_PROPERTY "persist.sys.root_access"
+#define ROOT_ACCESS_PROPERTY "persist.sys.clean.root"
 #define ROOT_ACCESS_DEFAULT "0"
-#define ROOT_SETTINGS_PROPERTY "ro.root.settings"
+#define ROOT_SETTINGS_PROPERTY "ro.clean.root"
 
 struct su_initiator {
     pid_t pid;
